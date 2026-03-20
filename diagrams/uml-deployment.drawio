@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.4">
+  <diagram name="BeachSystemArchitecture" id="beach-arch">
+    <mxGraphModel dx="1281" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="db" parent="1" style="shape=cube;whiteSpace=wrap;html=1;fillColor=#dae8fc;" value="PostgreSQL Database&lt;br&gt;(BeachVisitor, Duty, User)" vertex="1">
+          <mxGeometry height="90" width="160" x="420" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="client" parent="1" style="shape=cube;whiteSpace=wrap;html=1;fillColor=#e1d5e7;" value="Client Browser&lt;br&gt;Manager &amp; Employee UI" vertex="1">
+          <mxGeometry height="80" width="140" x="220" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="appServer" parent="1" style="shape=cube;whiteSpace=wrap;html=1;fillColor=#fff2cc;" value="Application Server&lt;br&gt;Auth Service, Shift Controller, Rental Tracker, Report Engine" vertex="1">
+          <mxGeometry height="140" width="200" x="400" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="googleAPI" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" value="External APIs&lt;br&gt;OAuth 2.0&lt;br&gt;Google Calendar&lt;br&gt;Google Sheets / Docs" vertex="1">
+          <mxGeometry height="150" width="210" x="630" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeClientToServer" edge="1" parent="1" source="client" style="endArrow=classic;html=1;" target="appServer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeServerToDB" edge="1" parent="1" source="appServer" style="endArrow=classic;html=1;" target="db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeServerToAPI" edge="1" parent="1" source="appServer" style="endArrow=classic;html=1;" target="googleAPI">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

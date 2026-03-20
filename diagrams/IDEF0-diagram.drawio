@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.4">
+  <diagram name="BeachManagementIDEF0" id="beach-idef0">
+    <mxGraphModel dx="1281" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="processA0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;" value="Управление посещением пляжа и прокатом" vertex="1">
+          <mxGeometry height="80" width="250" x="250" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="inputVisitors" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;" value="Данные посетителей (Visitor)" vertex="1">
+          <mxGeometry height="30" width="180" x="50" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="inputBeachArea" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;" value="Данные зон пляжа (BeachArea)" vertex="1">
+          <mxGeometry height="30" width="180" x="50" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="outputReports" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;" value="Отчёты по посещениям и прокату" vertex="1">
+          <mxGeometry height="30" width="200" x="550" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="mechanismStaff" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;" value="Сотрудники (Duty.employee)" vertex="1">
+          <mxGeometry height="30" width="200" x="270" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="mechanismManager" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;" value="Менеджер" vertex="1">
+          <mxGeometry height="30" width="80" x="500" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="controlRules" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;" value="Правила пляжа и проката" vertex="1">
+          <mxGeometry height="30" width="200" x="270" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" edge="1" parent="1" source="inputVisitors" style="endArrow=classic;html=1;" target="processA0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" edge="1" parent="1" source="inputBeachArea" style="endArrow=classic;html=1;" target="processA0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" edge="1" parent="1" source="processA0" style="endArrow=classic;html=1;" target="outputReports">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" edge="1" parent="1" source="mechanismStaff" style="endArrow=classic;html=1;" target="processA0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge5" edge="1" parent="1" source="mechanismManager" style="endArrow=classic;html=1;" target="processA0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge6" edge="1" parent="1" source="controlRules" style="endArrow=classic;html=1;" target="processA0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="processA1_1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;" value="Регистрация посещения" vertex="1">
+          <mxGeometry height="60" width="180" x="100" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="processA1_2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;" value="Учёт использования проката" vertex="1">
+          <mxGeometry height="60" width="180" x="320" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="processA1_3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;" value="Формирование отчётов" vertex="1">
+          <mxGeometry height="60" width="180" x="540" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeA0A1_1" edge="1" parent="1" source="processA0" style="endArrow=classic;html=1;" target="processA1_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeA0A1_2" edge="1" parent="1" source="processA0" style="endArrow=classic;html=1;" target="processA1_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeA0A1_3" edge="1" parent="1" source="processA0" style="endArrow=classic;html=1;" target="processA1_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
